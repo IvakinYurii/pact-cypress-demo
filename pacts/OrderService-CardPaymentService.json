@@ -1,0 +1,51 @@
+{
+  "consumer": {
+    "name": "OrderService"
+  },
+  "interactions": [
+    {
+      "description": "a request to process payment",
+      "providerState": "a payment can be processed",
+      "request": {
+        "body": {
+          "amount": "99.99",
+          "cardNumber": "4111111111111111",
+          "cvv": "123",
+          "expiryDate": "12/25",
+          "orderId": "1234567890"
+        },
+        "headers": {
+          "Accept": "*/*",
+          "Connection": "keep-alive",
+          "Content-Type": "application/json"
+        },
+        "method": "POST",
+        "path": "/api/payments"
+      },
+      "response": {
+        "body": {
+          "status": "SUCCESS"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "13.1.4"
+    },
+    "pactRust": {
+      "ffi": "0.4.22",
+      "models": "1.2.3"
+    },
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  },
+  "provider": {
+    "name": "CardPaymentService"
+  }
+}
