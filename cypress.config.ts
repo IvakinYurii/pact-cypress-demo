@@ -14,7 +14,7 @@ module.exports = defineConfig({
             port: 8282,
             log: process.cwd() + '/logs/pact.log',
             dir: process.cwd() + '/pacts',
-            logLevel: 'debug',
+            logLevel: 'info',
             spec: 2,
             ...options,
           });

@@ -109,3 +109,7 @@
   },
   "include": ["cypress/**/*.ts"]
 }
+
+
+//    "@pact-foundation/pact-node": "^10.18.0"
+//    "@pact-foundation/pact-web": "^9.18.1",
